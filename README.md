@@ -3,15 +3,12 @@
 
 ## Table of Contents
 
+
 - [MySQL Guide and Cheatsheet](#mysql-guide-and-cheatsheet)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
     - [Basic Commands](#basic-commands)
       - [Connect to MySQL Server](#connect-to-mysql-server)
-  - [Table of Contents](#table-of-contents-1)
-  - [Introduction](#introduction-1)
-  - [Basic Commands](#basic-commands-1)
-    - [Connect to MySQL Server](#connect-to-mysql-server-1)
     - [To exit the client, use quit or exit](#to-exit-the-client-use-quit-or-exit)
     - [For a full list of commands, use help](#for-a-full-list-of-commands-use-help)
     - [Comments](#comments)
@@ -74,7 +71,7 @@ MySQL is a popular relational database management system. This guide provides a 
 
 #### Connect to MySQL Server
 
-## Table of Contents
+<!-- ## Table of Contents
 
 1. [Introduction](#introduction)
 2. [Basic Commands](#basic-commands)
@@ -102,7 +99,7 @@ MySQL is a popular relational database management system. This guide provides a 
 
 ## Basic Commands
 
-### Connect to MySQL Server
+### Connect to MySQL Server -->
 
 ```sql
 mysql -h hostname -u username -p
