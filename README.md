@@ -3,7 +3,6 @@
 
 ## Table of Contents
 
-
 - [MySQL Guide and Cheatsheet](#mysql-guide-and-cheatsheet)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
@@ -51,12 +50,13 @@
     - [LEFT JOIN](#left-join)
     - [RIGHT JOIN](#right-join)
     - [FULL OUTER JOIN](#full-outer-join)
+  - More:
     - [UNION](#union)
     - [UNION ALL](#union-all)
-  - [VIEWS](#views)
-  - [Group by](#group-by)
-  - [Having](#having)
-  - [Subqueries](#subqueries)
+    - [VIEWS](#views)
+    - [Group by](#group-by)
+    - [Having](#having)
+    - [Subqueries](#subqueries)
     - [Wildcards](#wildcards)
     - [Case](#case)
     - [Coalesce](#coalesce)
