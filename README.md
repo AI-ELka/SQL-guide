@@ -3,6 +3,79 @@
 
 ## Table of Contents
 
+- [MySQL Guide and Cheatsheet](#mysql-guide-and-cheatsheet)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+    - [Basic Commands](#basic-commands)
+      - [Connect to MySQL Server](#connect-to-mysql-server)
+  - [Table of Contents](#table-of-contents-1)
+  - [Introduction](#introduction-1)
+  - [Basic Commands](#basic-commands-1)
+    - [Connect to MySQL Server](#connect-to-mysql-server-1)
+    - [To exit the client, use quit or exit](#to-exit-the-client-use-quit-or-exit)
+    - [For a full list of commands, use help](#for-a-full-list-of-commands-use-help)
+    - [Comments](#comments)
+    - [Show databases](#show-databases)
+    - [Select Database](#select-database)
+    - [Show Tables](#show-tables)
+    - [Describe Table](#describe-table)
+  - [Database Operations](#database-operations)
+    - [Create Database](#create-database)
+    - [To use a specified database](#to-use-a-specified-database)
+    - [To list all databases on the server](#to-list-all-databases-on-the-server)
+    - [Delete Database](#delete-database)
+    - [Table Operations](#table-operations)
+    - [Create Table](#create-table)
+    - [To list all tables in the database](#to-list-all-tables-in-the-database)
+    - [Delete Table](#delete-table)
+    - [Alter Table (Add Column)](#alter-table-add-column)
+    - [Querying Data](#querying-data)
+    - [Select All Columns](#select-all-columns)
+    - [Select Specific Columns](#select-specific-columns)
+    - [Filtering and Sorting](#filtering-and-sorting)
+    - [WHERE Clause](#where-clause)
+    - [ORDER BY Clause](#order-by-clause)
+    - [To limit the number of rows returned](#to-limit-the-number-of-rows-returned)
+  - [Modifying Data in Tables](#modifying-data-in-tables)
+    - [To insert data into a table](#to-insert-data-into-a-table)
+    - [To update data in a table](#to-update-data-in-a-table)
+    - [To delete data from a table](#to-delete-data-from-a-table)
+    - [Aggregation Functions](#aggregation-functions)
+    - [Working with Functions](#working-with-functions)
+    - [To concatenate strings](#to-concatenate-strings)
+    - [To get the length of a string](#to-get-the-length-of-a-string)
+    - [Math](#math)
+    - [Working with Indexes](#working-with-indexes)
+    - [To create an index on a table](#to-create-an-index-on-a-table)
+    - [To create a unique index on a table](#to-create-a-unique-index-on-a-table)
+    - [To drop an index from a table](#to-drop-an-index-from-a-table)
+    - [Joins](#joins)
+    - [INNER JOIN](#inner-join)
+    - [LEFT JOIN](#left-join)
+    - [RIGHT JOIN](#right-join)
+    - [FULL OUTER JOIN](#full-outer-join)
+    - [UNION](#union)
+    - [UNION ALL](#union-all)
+  - [VIEWS](#views)
+  - [Group by](#group-by)
+  - [Having](#having)
+  - [Subqueries](#subqueries)
+    - [Wildcards](#wildcards)
+    - [Case](#case)
+    - [Coalesce](#coalesce)
+    - [Null](#null)
+    - [Full-text search](#full-text-search)
+
+## Introduction
+
+MySQL is a popular relational database management system. This guide provides a cheatsheet for basic to advanced MySQL commands.
+
+### Basic Commands
+
+#### Connect to MySQL Server
+
+## Table of Contents
+
 1. [Introduction](#introduction)
 2. [Basic Commands](#basic-commands)
 3. [Database Operations](#database-operations)
@@ -55,7 +128,7 @@ help
 
 ### Comments
 
-```sql 
+```sql
 -- This is a single line comment
 
 /*
@@ -404,4 +477,3 @@ FROM table_name;
 SELECT * FROM table_name
 WHERE CONTAINS(column_name, 'search_term');
 ```
-
