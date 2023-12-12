@@ -41,6 +41,17 @@ help
 
 ```
 
+### Comments
+
+```sql 
+-- This is a single line comment
+
+/*
+This is a 
+multi-line comment
+*/
+```
+
 ### Show databases
 
 ```sql
@@ -192,25 +203,16 @@ UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;
 
 ```sql
 DELETE FROM table_name WHERE condition;
-
 ```
 
 ### Aggregation Functions
 
 ```sql
-SELECT COUNT(column_name) FROM table_name;
-
-```
-
-```sql
-SELECT SUM(column_name) FROM table_name;
-
-
-```
-
-```sql
-SELECT AVG(column_name) FROM table_name;
-
+SELECT COUNT(column_name) FROM table_name; -- Count
+SELECT SUM(column_name) FROM table_name; -- Sum
+SELECT AVG(column_name) FROM table_name; -- Average
+SELECT MIN(column_name) FROM table_name; -- Minimum
+SELECT MAX(column_name) FROM table_name; -- Maximum
 ```
 
 ### Working with Functions
@@ -230,6 +232,14 @@ SELECT CONCAT('Hello', ' ', 'World');
 SELECT LENGTH('MySQL');
 
 ```
+
+### Math
+
+```sql
+SELECT ABS(column_name) FROM table_name; -- Absolute value
+SELECT ROUND(column_name, decimals) FROM table_name; -- Round value
+SELECT CEILING(column_name) FROM table_name; -- Round up value
+SELECT FLOOR(column_name) FROM table_name; -- Round down value```
 
 ### To get the current date and time
 
@@ -276,4 +286,109 @@ INNER JOIN table2 ON table1.column_name = table2.column_name;
 ```sql
 SELECT * FROM table1
 LEFT JOIN table2 ON table1.column_name = table2.column_name;
+```
+
+### RIGHT JOIN
+
+```sql
+SELECT * FROM table1
+RIGHT JOIN table2 ON table1.column_name = table2.column_name;
+```
+
+### FULL OUTER JOIN
+
+```sql
+SELECT * FROM table1
+FULL OUTER JOIN table2 ON table1.column_name = table2.column_name;
+
+```
+
+### UNION
+
+```sql
+SELECT column_name FROM table1
+UNION
+SELECT column_name FROM table2;
+```
+
+### UNION ALL
+
+```sql
+SELECT column_name FROM table1
+UNION ALL
+SELECT column_name FROM table2;
+```
+
+## VIEWS
+
+```sql
+CREATE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+```
+
+## Group by
+
+```sql
+SELECT column_name, COUNT(*)
+FROM table_name
+GROUP BY column_name;
+```
+
+## Having
+
+```sql
+SELECT column_name, COUNT(*)
+FROM table_name
+GROUP BY column_name
+HAVING COUNT(*) > 1;
+```
+
+## Subqueries
+
+```sql
+SELECT column_name 
+FROM table_name
+WHERE column_name IN (SELECT column_name FROM table_name WHERE condition);
+```
+
+### Wildcards
+
+```sql
+SELECT * FROM table_name
+WHERE column_name LIKE 'a%'; -- Starts with "a"
+```
+
+### Case
+
+```sql
+SELECT column_name,
+CASE 
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    ELSE result
+END 
+FROM table_name;
+```
+
+### Coalesce
+
+```sql
+SELECT COALESCE(column_name, 'N/A') 
+FROM table_name;
+```
+
+### Null
+
+```sql
+SELECT ISNULL(column_name, 'N/A') 
+FROM table_name;
+```
+
+### Full-text search
+
+```sql
+SELECT * FROM table_name
+WHERE CONTAINS(column_name, 'search_term');
 ```
