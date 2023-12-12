@@ -1,3 +1,4 @@
+
 # MySQL Guide and Cheatsheet
 
 ## Table of Contents
@@ -10,6 +11,17 @@
 6. [Filtering and Sorting](#filtering-and-sorting)
 7. [Aggregation Functions](#aggregation-functions)
 8. [Joins](#joins)
+9. [Working with Functions](#working-with-functions)
+10. [Working with Indexes](#working-with-indexes)
+11. [Views](#views)
+12. [Group by](#group-by)
+13. [Having](#having)
+14. [Subqueries](#subqueries)
+15. [Wildcards](#wildcards)
+16. [Case](#case)
+17. [Coalesce](#coalesce)
+18. [Null](#null)
+19. [Full-text search](#full-text-search)
 
 ## Introduction
 
@@ -392,3 +404,4 @@ FROM table_name;
 SELECT * FROM table_name
 WHERE CONTAINS(column_name, 'search_term');
 ```
+
