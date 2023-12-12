@@ -50,18 +50,18 @@
     - [LEFT JOIN](#left-join)
     - [RIGHT JOIN](#right-join)
     - [FULL OUTER JOIN](#full-outer-join)
-  - More:
     - [UNION](#union)
     - [UNION ALL](#union-all)
-    - [VIEWS](#views)
-    - [Group by](#group-by)
-    - [Having](#having)
-    - [Subqueries](#subqueries)
+  - [VIEWS](#views)
+  - [Group by](#group-by)
+  - [Having](#having)
+  - [Subqueries](#subqueries)
     - [Wildcards](#wildcards)
     - [Case](#case)
     - [Coalesce](#coalesce)
     - [Null](#null)
     - [Full-text search](#full-text-search)
+  - [Contributing](#contributing)
 
 ## Introduction
 
@@ -474,3 +474,10 @@ FROM table_name;
 SELECT * FROM table_name
 WHERE CONTAINS(column_name, 'search_term');
 ```
+
+
+
+
+## Contributing
+
+If you find any mistakes, or if you know of something interesting that could be added, please don't hesitate to contribute. We appreciate all help, no matter how small!
